@@ -1,0 +1,169 @@
+h1 {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.2;
+}
+ul {
+  list-style: none;
+  margin: 23px 0;
+  padding: 0;
+}
+.wrapper {
+  margin: 1rem;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 38px 14px;
+}
+
+main {
+  display: grid;
+  /* gap: 20px; */
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 308px;
+  margin-top: 21px;
+}
+.list_container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: flex-start;
+  padding: 6px 3px;
+  margin-bottom: 9px;
+  text-wrap: wrap;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.list_container > p {
+  text-align: left;
+  color: rgb(83, 81, 81);
+  font-weight: 400;
+}
+.icon_bullet {
+  width: 25px;
+  height: 25px;
+}
+
+.design {
+  background-image: url(../img/prism.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 1rem;
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 26px 0;
+}
+
+button {
+  border: 0.5px solid #e5e5e5;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.06), 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 145px;
+  height: 50px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.primary {
+  padding: 5px;
+  background: #4338ca;
+  color: #ffffff;
+}
+
+.secondary {
+  background: #ffffff;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  h1 {
+    font-size: 47px;
+    flex-direction: row;
+    font-weight: 700;
+    gap: 13px;
+  }
+
+  .wrapper {
+    padding: 65px 1rem;
+  }
+  main {
+    margin-top: 52px;
+    gap: 5px;
+    grid-template-rows: 1fr 463px;
+  }
+  .button_container {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 35px;
+    margin-top: 58px;
+  }
+  button {
+    width: 211px;
+    height: 60px;
+    font-size: 18px;
+  }
+  .design {
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    margin-top: 50px;
+  }
+  h1 {
+    flex-direction: column;
+    font-size: 60px;
+    line-height: 1;
+  }
+  .wrapper {
+    padding: 100px 0 92px 95px;
+  }
+  main {
+    grid-template-columns: 480px 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 3px;
+    gap: 40px;
+  }
+
+  ul {
+    margin: 58px 0;
+  }
+  .list_container {
+    gap: 8px;
+  }
+  .button_container {
+    flex-direction: row-reverse;
+    margin: 55px 0 58px 0;
+    gap: 32px;
+    justify-content: flex-end;
+  }
+  button {
+    width: 176px;
+    height: 62px;
+    font-size: 18px;
+  }
+  .design {
+    /* background-size: 698px 477px; */
+    /* aspect-ratio: 16/10; */
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .design {
+    background-size: 43rem 32.8rem;
+    background-position: left;
+  }
+}
