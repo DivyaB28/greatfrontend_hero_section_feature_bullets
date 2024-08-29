@@ -17,7 +17,7 @@ function App() {
           <ul>
             <li className="list_container">
               <img
-                src="../img/check-line.svg"
+                src="/check-line.svg"
                 className="icon_bullet"
                 alt="icon_bullet"
               />{" "}
@@ -25,7 +25,7 @@ function App() {
             </li>
             <li className="list_container">
               <img
-                src="../img/check-line.svg"
+                src="/check-line.svg"
                 className="icon_bullet"
                 alt="icon_bullet"
               />{" "}
@@ -33,7 +33,7 @@ function App() {
             </li>
             <li className="list_container">
               <img
-                src="../img/check-line.svg"
+                src="/check-line.svg"
                 className="icon_bullet"
                 alt="icon_bullet"
               />
